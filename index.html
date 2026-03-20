@@ -19,6 +19,24 @@
   <link href="images/favicon.jpg" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.jpg" rel="apple-touch-icon">
 </head>
+	<style>
+```css
+/* Hide mobile content by default (Desktop first) */
+.mobileview {
+  display: none;
+}
+
+/* If the screen is 768px or smaller, swap them */
+@media (max-width: 768px) {
+  .desktopview {
+    display: none;
+  }
+  .mobileview {
+    display: block;
+  }
+}
+```
+		</style>
 <body>
 	<!-- Desktop Mode -->
 
@@ -26,38 +44,39 @@
 
 
 	<!--Mobile Mode-->
-  <div class="theear">
-    <a href="https://wa.me/447586709235" target="_blank" class="ear w-inline-block"><img src="images/new-ear-trans-updated-min-a.png" loading="eager" sizes="(max-width: 767px) 100vw, 560px" srcset="images/new-ear-trans-updated-min-p-500-a.png 500w, images/new-ear-trans-updated-min-a.png 700w" alt=""></a>
-    <div class="ear-block-bottom-holder">
-      <div class="div-block">
-        <div class="pink-text">Have</div>
-        <div class="pink-text nudge-right">your</div>
-        <div class="pink-text">say —</div>
-      </div>
-      <div>
-        <div>Click on the Ear</div>
-        <div>to send a message.</div>
-      </div>
-    </div>
-    <div class="ear-block-bottom-holder">
-      <div class="ear-block-supporting-txt">
-        <div>Have you got something you&#x27;d like to say to the nation? A suggestion, a dream, a complaint, a moment of celebration, or a scream of frustration?</div>
-      </div>
-    </div>
-  </div>
-  <div class="holder">
-    <div class="section-holder-how-to">
-      <p>How this works</p>
-      <ul role="list" class="how-it-works">
-        <li>If not already, please open this page on your phone</li>
-     <li>Tap the Ear to open WhatsApp</li>
-        <li>Type or voice-record your message to the nation</li>
-        <li>(Add your name and social handles, or stay anonymous)</li>
-        <li>Follow <a href="https://www.instagram.com/empathymuseum/" target="_blank">@empathymuseum</a> to see the project travel and grow, and to hear from fellow contributors!</li>
-      </ul>
-      <p>Thank you for your wisdom which we will share on our channels.</p>
-    </div>
-  </div>
+<div class="mobileview">
+  	<div class="theear">
+   	 <a href="https://wa.me/447586709235" target="_blank" class="ear w-inline-block"><img src="images/new-ear-trans-updated-min-a.png" loading="eager" sizes="(max-width: 767px) 100vw, 560px" srcset="images/new-ear-trans-updated-min-p-500-a.png 500w, images/new-ear-trans-updated-min-a.png 700w" alt=""></a>
+   		 <div class="ear-block-bottom-holder">
+     		 <div class="div-block">
+      		  <div class="pink-text">Have</div>
+       		 <div class="pink-text nudge-right">your</div>
+      		  <div class="pink-text">say —</div>
+     						 </div>
+     	 <div>
+     		   <div>Click on the Ear</div>
+      		  <div>to send a message.</div>
+     		 </div>
+   		 </div>
+   		 <div class="ear-block-bottom-holder">
+    		  <div class="ear-block-supporting-txt">
+      		  <div>Have you got something you&#x27;d like to say to the nation? A suggestion, a dream, a complaint, a moment of celebration, or a scream of frustration?</div>
+     		 </div>
+   		 </div>
+  		</div>
+ 			 <div class="holder">
+ 			   <div class="section-holder-how-to">
+  			    <p>How this works</p>
+    			  <ul role="list" class="how-it-works">
+    			 <li>Tap the Ear to open WhatsApp</li>
+     		   <li>Type or voice-record your message to the nation</li>
+       		 <li>(Add your name and social handles, or stay anonymous)</li>
+       		 <li>Follow <a href="https://www.instagram.com/empathymuseum/" target="_blank">@empathymuseum</a> to see the project travel and grow, and to hear from fellow contributors!</li>
+     		 </ul>
+     		 <p>Thank you for your wisdom which we will share on our channels.</p>
+   			 </div>
+ 			 </div>
+</div>
   <div class="holder">
     <div class="section-holder-footer">
       <div class="footer">
