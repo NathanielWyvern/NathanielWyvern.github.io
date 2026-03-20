@@ -21,7 +21,49 @@
 </head>
 <body>
 	<!-- Desktop Mode -->
+<div class="desktopview">
+<!-- LEFT COLUMN: The Ear -->
+  <div class="ear-column">
+    <a href="https://wa.me/447586709235" target="_blank" class="ear w-inline-block">
+      <img src="images/new-ear-trans-updated-min-a.png" loading="eager" sizes="560px" srcset="images/new-ear-trans-updated-min-p-500-a.png 500w, images/new-ear-trans-updated-min-a.png 700w" alt="The Ear">
+    </a>
+  </div>
 
+  <!-- RIGHT COLUMN: All the text -->
+  <div class="text-column">
+    
+    <div class="ear-block-bottom-holder">
+      <div class="div-block" style="display: flex; gap: 5px;">
+        <div class="pink-text">Have</div>
+        <div class="pink-text nudge-right">your</div>
+        <div class="pink-text">say —</div>
+      </div>
+      <div>
+        <div>Click on the Ear</div>
+        <div>to send a message.</div>
+      </div>
+    </div>
+
+    <div class="ear-block-bottom-holder">
+      <div class="ear-block-supporting-txt">
+        <p>Have you got something you'd like to say to the nation? A suggestion, a dream, a complaint, a moment of celebration, or a scream of frustration?</p>
+      </div>
+    </div>
+
+    <div class="section-holder-how-to">
+      <p><strong>How this works</strong></p>
+      <ul role="list" class="how-it-works">
+        <li>Tap the Ear to open WhatsApp</li>
+        <li>Type or voice-record your message to the nation</li>
+        <li>(Add your name and social handles, or stay anonymous)</li>
+        <li>Follow <a href="https://www.instagram.com/empathymuseum/" target="_blank">@empathymuseum</a> to see the project travel and grow, and to hear from fellow contributors!</li>
+      </ul>
+      <p>Thank you for your wisdom which we will share on our channels.</p>
+    </div>
+
+  </div> <!-- End text-column -->
+</div>
+	
 
 
 
@@ -102,6 +144,37 @@
     display: block;
   }
 }
+/* 2. THE DESKTOP LAYOUT (Ear Left, Text Right) */
+  .desktopview {
+    display: flex;         /* Puts columns side-by-side */
+    align-items: flex-start; /* Aligns them to the top */
+    gap: 50px;             /* Space between ear and text */
+    max-width: 1200px;     /* Limits width on huge monitors */
+    margin: 40px auto;     /* Centers the whole thing on the page */
+    padding: 0 20px;
+  }
+
+  .ear-column {
+    flex: 0 0 400px;       /* Keeps the ear at a fixed width (adjust as needed) */
+  }
+
+  .ear-column img {
+    width: 100%;           /* Makes sure the image fits its column */
+    height: auto;
+  }
+
+  .text-column {
+    flex: 1;               /* Let the text fill the rest of the space */
+  }
+
+  /* Styling for the pink text line so it stays horizontal */
+  .div-block {
+    display: flex;
+    gap: 8px;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
 </style>
   </div>
   <script src="js/jquery.js?site=65d135d857f8362bb0a4c3cb" type="text/javascript"  ></script>
