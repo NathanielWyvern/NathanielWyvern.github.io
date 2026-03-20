@@ -19,24 +19,6 @@
   <link href="images/favicon.jpg" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.jpg" rel="apple-touch-icon">
 </head>
-	<style>
-```css
-/* Hide mobile content by default (Desktop first) */
-.mobileview {
-  display: none;
-}
-
-/* If the screen is 768px or smaller, swap them */
-@media (max-width: 768px) {
-  .desktopview {
-    display: none;
-  }
-  .mobileview {
-    display: block;
-  }
-}
-```
-		</style>
 <body>
 	<!-- Desktop Mode -->
 
@@ -106,6 +88,20 @@
 	ul li {
     margin-bottom: 19px;
 	}
+		/* Hide mobile content by default (Desktop first) */
+.mobileview {
+  display: none;
+}
+
+/* If the screen is 768px or smaller, swap them */
+@media (max-width: 768px) {
+  .desktopview {
+    display: none;
+  }
+  .mobileview {
+    display: block;
+  }
+}
 </style>
   </div>
   <script src="js/jquery.js?site=65d135d857f8362bb0a4c3cb" type="text/javascript"  ></script>
