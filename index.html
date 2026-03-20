@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Ear of Britain</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta content="Ear of Britain" property="og:title">
   <meta content="Ear of Britain" property="twitter:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -19,6 +20,83 @@
   <link href="images/favicon.jpg" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.jpg" rel="apple-touch-icon">
 </head>
+	 <style>
+	p {
+    widows: 3;
+    orphans: 3;
+    text-wrap: pretty;
+  }
+	.txtone {
+		transform: rotate(14deg);
+	}
+	.txtthree {
+		transform: rotate(-14deg);
+	}
+	ul li {
+    margin-bottom: 19px;
+	}
+/* Hide mobile version by default */
+  .mobileview {
+    display: none !important;
+  }
+
+  /* Desktop version uses Flexbox by default */
+  .desktopview {
+    display: flex; 
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  /* --- 2. THE MOBILE OVERRIDE (Screen is 768px or smaller) --- */
+  
+  @media screen and (max-width: 768px) {
+    
+    /* FORCE desktop to vanish */
+    .desktopview {
+      display: none !important;
+    }
+
+    /* FORCE mobile to appear */
+    .mobileview {
+      display: block !important;
+    }
+  }
+
+  /* 2. THE DESKTOP LAYOUT (Ear Left, Text Right) */
+  .desktopview {
+    display: flex;         /* Puts columns side-by-side */
+    align-items: flex-start; /* Aligns them to the top */
+    gap: 50px;             /* Space between ear and text */
+    max-width: 1200px;     /* Limits width on huge monitors */
+    margin: 40px auto;     /* Centers the whole thing on the page */
+    padding: 0 20px;
+  }
+
+  .ear-column {
+    flex: 0 0 400px;       /* Keeps the ear at a fixed width (adjust as needed) */
+  }
+
+  .ear-column img {
+    width: 100%;           /* Makes sure the image fits its column */
+    height: auto;
+  }
+
+  .text-column {
+    flex: 1;               /* Let the text fill the rest of the space */
+  }
+
+  /* Styling for the pink text line so it stays horizontal */
+  .div-block {
+    display: flex;
+    gap: 8px;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+</style>
 <body>
 	<!-- Desktop Mode -->
 <div class="desktopview">
@@ -115,67 +193,6 @@
     </div>
   </div>
   <div class="w-embed">
-    <style>
-	p {
-    widows: 3;
-    orphans: 3;
-    text-wrap: pretty;
-  }
-	.txtone {
-		transform: rotate(14deg);
-	}
-	.txtthree {
-		transform: rotate(-14deg);
-	}
-	ul li {
-    margin-bottom: 19px;
-	}
-/* 1. THE SWITCHING LOGIC */
-  .mobileview {
-    display: none; /* Hide mobile by default */
-  }
-
-  @media (max-width: 768px) {
-    .desktopview {
-      display: none !important; /* Hide desktop on small screens */
-    }
-    .mobileview {
-      display: block !important; /* Show mobile on small screens */
-    }
-  }
-
-  /* 2. THE DESKTOP LAYOUT (Ear Left, Text Right) */
-  .desktopview {
-    display: flex;         /* Puts columns side-by-side */
-    align-items: flex-start; /* Aligns them to the top */
-    gap: 50px;             /* Space between ear and text */
-    max-width: 1200px;     /* Limits width on huge monitors */
-    margin: 40px auto;     /* Centers the whole thing on the page */
-    padding: 0 20px;
-  }
-
-  .ear-column {
-    flex: 0 0 400px;       /* Keeps the ear at a fixed width (adjust as needed) */
-  }
-
-  .ear-column img {
-    width: 100%;           /* Makes sure the image fits its column */
-    height: auto;
-  }
-
-  .text-column {
-    flex: 1;               /* Let the text fill the rest of the space */
-  }
-
-  /* Styling for the pink text line so it stays horizontal */
-  .div-block {
-    display: flex;
-    gap: 8px;
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-</style>
   </div>
   <script src="js/jquery.js?site=65d135d857f8362bb0a4c3cb" type="text/javascript"  ></script>
   <script src="js/webflow.js" type="text/javascript"></script>
