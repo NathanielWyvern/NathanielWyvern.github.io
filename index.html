@@ -130,21 +130,21 @@
 	ul li {
     margin-bottom: 19px;
 	}
-		/* Hide mobile content by default (Desktop first) */
-.mobileview {
-  display: none;
-}
-
-/* If the screen is 768px or smaller, swap them */
-@media (max-width: 768px) {
-  .desktopview {
-    display: none;
-  }
+/* 1. THE SWITCHING LOGIC */
   .mobileview {
-    display: block;
+    display: none; /* Hide mobile by default */
   }
-}
-/* 2. THE DESKTOP LAYOUT (Ear Left, Text Right) */
+
+  @media (max-width: 768px) {
+    .desktopview {
+      display: none !important; /* Hide desktop on small screens */
+    }
+    .mobileview {
+      display: block !important; /* Show mobile on small screens */
+    }
+  }
+
+  /* 2. THE DESKTOP LAYOUT (Ear Left, Text Right) */
   .desktopview {
     display: flex;         /* Puts columns side-by-side */
     align-items: flex-start; /* Aligns them to the top */
